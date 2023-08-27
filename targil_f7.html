@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        /*Write a function that receives a number between 1 to 12.
+         Each number represents each month of the year.
+         The function has to return the number of the days in the month. If the number given
+         is not between 1 to 12, then the functions -1.
+         January, March, May, July, August, October, December -> 31 days in a month.
+         February -> 28 days in a month.
+         April, June, September, November -> 30 days in a month.
+         Ex:
+         if the number is 1, it means that the user wants to know how many days there are in
+         January month.
+         if the number is 2, it means that the user wants to know how many days there is in
+         February month.
+         If the input is 7, the output must be 31.
+         If the input is 2, the output must be 28.*/
+ 
+        function dayMonth (){
+            let number = parseInt(prompt("Please enter number [number from 1 to 12]: "))
+
+            switch (number) {
+            case 1:
+            case 3:
+            case 5:                
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.write(`<h2>31 days</h2>`)
+                break;
+            case 2:
+                document.write(`<h2>28-29 days</h2>`)
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.write(`<h2>30 days</h2>`)
+                break;                  
+            default:
+                document.write('<h2>Error</h2>');
+        }
+        }
+         dayMonth ();
+    </script>
+    
+</body>
+</html>

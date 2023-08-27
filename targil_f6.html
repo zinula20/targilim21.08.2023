@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        /* Write a function that receives a parameter of type int.
+          The number has to be between 1 to 7 and each number represents each day of the
+          week.
+         The function has to return the specific day that represents the number. If the number
+         is not between 1 to 7, the function has to return the string “Error”.
+          Ex: if the number is 2, the function returns “Monday”,
+          if the number is 3, the function returns “Tuesday”....*/
+        function dayWeek (){
+            let day = parseInt(prompt("Please enter day of the week [number from 1 to 7]: "))
+
+            switch (day) {
+            case 1:console.log('Sunday')
+                break;
+            case 2:console.log('Monday')
+                break;
+            case 3:console.log('Tuesday')
+                break;                                        
+            case 4:console.log('Wednesday')
+                break;
+            case 5:console.log('Thursday')
+                break;
+            case 6:console.log(`Friday`)
+                break;
+            case 7:console.log('Saturday')
+                break;
+            default:
+                console.log('Error');
+        }
+        }
+         dayWeek ();
+    </script>
+    
+</body>
+</html>
