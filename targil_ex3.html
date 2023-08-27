@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex3</title>
+</head>
+<body>
+    <p><h2 style="color: red;">TRUE OR FALSE</h2></p>
+    <p id="a"></p>
+<style>
+    #a {
+    color: rgb(6, 6, 234);
+    font-size: x-large;
+  }
+</style>
+    
+
+<script>
+document.getElementById("a").innerHTML = "1 <= 8+1 is" + "&nbsp" + Boolean(1<=8+1) + "<br>" +
+"(2-3+4) * (9+7) && false is" + "&nbsp" + Boolean((2-3+4)*(9+7) && false) + "<br>" +
+"10+18 >= 3||4 <= 10 is" + "&nbsp" + Boolean(10+18 >= 3||4 <= 10) + "<br>" + "10==10 || 10===10 is" + "&nbsp" + Boolean(10==10 || 10===10) 
+ + "<br>" + "10==10 && 20==30 || 5%2==1 is" + "&nbsp" + Boolean(10==10 && 20==30 || 5%2==1)
+ + "<br>" + "10==10 || 20==30 && 5%2==1 is" + "&nbsp" + Boolean(10==10 || 20==30 && 5%2==1) + "<br>" + "20==30 || 10==10 || 5%2==0 is" + "&nbsp" + Boolean(20==30 || 10==10 || 5%2==0)
+ + "<br>" + "(33>20) || (2<12) && 10 || 2<=3 && !true is" + "&nbsp" + Boolean((33>20) || (2<12) && 10 || 2<=3 && !true) + "<br>" + "true && true || false || true is" + "&nbsp" + Boolean(true && true || false || true) 
+ + "<br>" + "true && false || 8<10 && !false is" + "&nbsp" + Boolean(true && false || 8<10 && !false)
+ + "<br>" + "true || false && 5<=9 || 10!=38 is" + "&nbsp" + Boolean(true || false && 5<=9 || 10!=38) 
+ + "<br>" + "!false || !true && !false && !true is" + "&nbsp" + Boolean(!false || !true && !false && !true) 
+ + "<br>" + "(!10) && (10) || (!10) && (10) && 2<9 || true is" + "&nbsp" + Boolean((!10) && (10) || (!10) && (10) && 2<9 || true)
+ + "<br>" + "(!false) || (!10)" + "&nbsp" + Boolean((!false) || (!10));
+
+    </script>
+    
+</body>
+</html>
