@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SC</title>
+</head>
+<body>
+    <script>
+        /*Write a function with switch-case.
+         The function receives a number between 0 to 100.
+         If the number is between 0 to 20, the function returns : “D”.
+         If the function is between 21 to 55, the function returns : “C ”.
+         If the function is between 56 to 70, the function returns : “B ”.
+         If the function is between 71 to 90, the function returns : “A ”.
+         If the function is between 90 to 100, the function returns : “A+ ”*/
+
+         function between () {
+            let num = parseInt(prompt('Please enter number from 0 to 100: '));
+         switch ((0 <= num && num <= 20) ? 0 :
+                (21 <= num && num <= 55) ? 1 : (56 <= num && num <= 70) ? 2 :
+                (71 <= num && num <= 90) ? 3 : (90 <= num && num <= 100) ? 4 : 5) { 
+        
+            case 0:
+                return (`D`)
+                break;      
+            case 1:
+                return (`C`)
+                break;
+            case 2:
+                return (`B`)
+                break;
+            case 3:
+                return (`A`)
+                break;
+            case 4:
+                return (`A+`)
+                break;
+            
+            default:
+                return (`Please enter number from 0 to 100`)
+        }
+         }
+          between ();
+    </script>
+    
+</body>
+</html>

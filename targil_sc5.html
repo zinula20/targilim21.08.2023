@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SC</title>
+</head>
+<body>
+    <script>
+        /*Write a function with switch-case.
+         The function receives a letter and has to check if the letter is a vowel or a consonant.
+         The vowel letters are : a,e,i,o,u,y and the rest of the letters a consonant.*/
+
+         function vowCon () {
+            let letter = prompt('Please enter letter: ');
+
+            switch (letter) {
+              case "a":
+              case "e":
+              case "y":
+              case "i":
+              case "o":
+              case "u":  
+                document.write(`<h2>${letter}</h2> this is vowel letter`);
+                break;
+              default:
+                document.write(`<h2>${letter}</h2> this is consonant letter`);
+            }  
+         }
+          vowCon ();
+    </script>
+    
+</body>
+</html>

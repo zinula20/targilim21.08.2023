@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SC</title>
+</head>
+<body>
+    <script>
+        /*Write a function with switch-case.
+         The function receives 3 parameters(2 integer numbers and number between 1 to 4).
+         number 1 -> addition
+         number 2 -> subtraction
+         number 3 -> division
+         number 4 -> multiplication
+         For example, if the third parameter is 4, the function returns the first parameter * the second
+         parameter.
+         If the third parameter is 2, the function returns the first parameter - the second parameter*/
+
+        function param (a = 5, b = 9, c) {
+            c = parseInt(prompt('Please enter number from 1 to 4: '));
+          switch (c) {
+            case 1:
+                return a + b;
+                break;
+            case 2:
+                return a - b;
+                break;
+            case 3:
+                return a * b;
+                break;
+            case 4:
+                return a / b;
+                break;
+            default:
+                return (`Please enter number from 1 to 4`)         
+          }
+        }
+          param ();
+    </script>
+    
+</body>
+</html>
