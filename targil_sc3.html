@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SC</title>
+</head>
+<body>
+    <script>
+        /*Write a function with switch-case.
+        The function receives one number, if the number is between 1 to 17, then the function will
+        return the specific day, otherwise the function will return “please enter another number”.*/
+
+        function spDay () {
+            let num = parseInt(prompt('enter number: '));
+
+            switch (num >= 1 && num <= 17) {
+              case true:
+                return (`Specific day`);
+                break;
+              default:
+                return (`Please enter another number`);
+            }  
+        }
+         spDay();
+    </script>
+    
+</body>
+</html>

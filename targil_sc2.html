@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SC</title>
+</head>
+<body>
+    <script>
+        /*Write a function with switch-case.
+          The function receives a number and return string saying if the number given is negative or
+          positive.*/
+          function posNeg () {
+            let num = parseInt(prompt('enter number: '));
+            switch (num > 0) {
+              case true:
+                return (`${num} is positive number`);
+                break;
+              default:
+                return (`${num} is negative number`);
+            } 
+          }
+          posNeg ();
+    </script>
+    
+</body>
+</html>

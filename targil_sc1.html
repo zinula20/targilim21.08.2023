@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SC</title>
+</head>
+<body>
+    <script>
+        /*Write a function with switch-case.
+          The function receives a number and return string saying if the number given is even or odd.*/
+        function sc () {
+            let num = parseInt(prompt('enter number: ')); 
+            switch (num % 2) {
+              case 0:
+                console.log(`${num} is an even number`);
+                break;
+              case 1:
+                console.log(`${num} is an odd number`);
+                break;
+              default:
+                console.log("Invalid input");
+            }
+        }
+        sc();
+    </script>
+    
+</body>
+</html>
