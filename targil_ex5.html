@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex5</title>
+</head>
+<body>
+    <script>
+
+         function ft (a = 0, b = 0, c = 0, d = 0) {
+           if (a || b || c || d || false) {
+            document.write(`<h3>ex. 5(1) - true</h3>`); 
+         }
+           else {
+           document.write(`<h3>ex. 5(1) - false</h3>`);
+         }
+         }
+         ft ();
+         ft (1, 2, 3, 4);
+
+         function ft_1 (a = 0, b = 0, c = 0, d = 0) {
+           if (a == b || c <= d) {
+            document.write(`<h3>ex. 5(2) - true</h3>`); 
+         }
+           else {
+           document.write(`<h3>ex. 5(2) - false</h3>`);
+         }
+         }
+         ft_1 ();
+         ft_1 (1, 2, 5, 4);
+
+         function ft_2 (a = 0, b = 0, c = 0, d = 0) {
+           if (a <= c && c <= d || !b) {
+            document.write(`<h3>ex. 5(3) - true</h3>`); 
+         }
+           else {
+           document.write(`<h3>ex. 5(3) - false</h3>`);
+         }
+         }
+         ft_2 ();
+         ft_2 (1, 2, 5, 4);
+
+         function ft_3 (a = 0, b = 0, c = 0, d = 0) {
+           if (a != b || a<c && !c) {
+            document.write(`<h3>ex. 5(4) - true</h3>`); 
+         }
+           else {
+           document.write(`<h3>ex. 5(4) - false</h3>`);
+         }
+         }
+         ft_3 ();
+         ft_3 (1, 2, 5, 4);
+
+         function ft_4 (a = 0, b = 0, c = 0, d = 0) {
+           if (a != b || a<= c || a<= b || true) {
+            document.write(`<h3>ex. 5(5) - always true (true)</h3>`); 
+         }
+           else {
+           document.write(`<h3>ex. 5(5) - false</h3>`);
+         }
+         }
+         ft_4 ();
+
+         function ft_5 (a = 0, b = 0, c = 0, d = 0) {
+           if (a!=b || a<=c || a<b || c==c) {
+            document.write(`<h3>ex. 5(6) - always true (c==c)</h3>`); 
+         }
+           else {
+           document.write(`<h3>ex. 5(6) - false</h3>`);
+         }
+         }
+         ft_5 ();
+
+
+        function ft_6 (a = 0, b = 0, c = 0, d = 0) {
+            if  (a%b == 0 && c%d == 1) {
+            document.write(`<h3>ex. 5(7) - true</h3>`); 
+         }
+            else {
+            document.write(`<h3>ex. 5(7) - false</h3>`);
+         }
+
+         }
+          ft_6 ();
+          ft_6 (4, 2, 6, 5);
+
+
+
+
+
+    </script>
+     
+</body>
+</html>
