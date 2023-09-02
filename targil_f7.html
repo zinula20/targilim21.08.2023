@@ -32,19 +32,19 @@
             case 8:
             case 10:
             case 12:
-                document.write(`<h2>31 days</h2>`)
+                return (`31 days`)
                 break;
             case 2:
-                document.write(`<h2>28-29 days</h2>`)
+                return (`28-29 days`)
                 break;
             case 4:
             case 6:
             case 9:
             case 11:
-                document.write(`<h2>30 days</h2>`)
+                return (`30 days`)
                 break;                  
             default:
-                document.write('<h2>Error</h2>');
+                return ('Error -1');
         }
         }
          dayMonth ();

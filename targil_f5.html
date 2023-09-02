@@ -13,17 +13,21 @@
          If none of the two cases happened, the function returns the string “all numbers not
          equals”.*/
         function equals (a, b, c, d) {
-            if (a == b == c == d) {
-                return "all equals"
+            const arr = [a, b, c, d]
+            if (arr.every(x => x == arr[0])) {
+                return "all equals"    
             }
-            else if (a != b != c !=d) {
-                return "all numbers not equals"
-            }
-            else {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr.filter(x => x == arr[i].length == 2)) {
                 return "only 2 numbers are equals"
-            }
-            }
-            equals (4, 5, 4, 6);
+                
+               }   
+           }
+                return "all numbers not equals"
+        } 
+
+    
+            equals (1, 4, 0, 5);
 
     </script>
     
