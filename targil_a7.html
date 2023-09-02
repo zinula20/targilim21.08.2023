@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        /*Create a function that receives an array.
+        If all the values of the array are smaller than 50, the function returns “smaller than 50”.
+        If all the values of the array are between 51 to 100, the function returns “ between 51 to
+        100”.
+        If all the values of the array are between 101 to 200, the function returns “between 101 to
+        200”.
+        If all the values of the array are greater than 201, the function returns “greater than 200”.
+        If none of the conditions above is happening your function should print “No condition is
+        happening”*/
+
+        function num (arr = [a, b, c]) {
+
+          for (let i = 0; i <= arr.length; i++) {
+
+              if (arr[i] < 50){
+                return (`Smaller than 50`);
+            }
+              else if (arr[i] >= 51 && arr[i] <= 100) {
+                return (`Between 51 to 100`);
+            }
+              else if (arr[i] >= 101 && arr[i] <= 200) {
+                return (`Between 101 to 200`);
+            }
+              else if (arr[i] >= 201) {
+                return (`Greater than 200`);
+            }
+              else {
+                return (`No condition is happening`);
+           }
+
+          }
+        }  
+
+
+        
+         num ([1, 49, 2]);
+
+    </script>
+    
+    
+</body>
+</html>

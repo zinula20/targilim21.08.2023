@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        /*Create a function that receives an integer array. for each element in the array check If the
+        value of the index is smaller than 10 → add 5 to that value.
+        Print the array*/
+
+        function valueInd (arr = []) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] < 10) {
+                    arr[i] += 5;
+                }
+                console.log(`${arr}`);
+            }
+        }
+         valueInd ([4, 5, 10])
+        
+    </script>
+    
+</body>
+</html>

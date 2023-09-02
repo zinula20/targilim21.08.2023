@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        /*Create a function that receives an integer array and int number.
+        If the value of the second parameter is in the array, the function returns “found” otherwise
+        “not found”.*/
+
+    function found () {
+        const arr = [9, 10, 5, 6, 1]
+        let number = parseInt(prompt(`Please enter number from 1 to 10: `));
+        let a = arr.includes (number);
+          if (a == true) {
+            document.write (`<h2 style="color:red">Found</h2>`);
+          }
+          else {
+            document.write (`<h2 style="color:green">Not found</h2>`);
+          }
+          
+    }  
+        found ();
+
+
+    </script>
+    
+</body>
+</html> 

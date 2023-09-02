@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        /*Create a function that receives an array and 2 numbers of type integer.
+        If the first value of the array is equal to the first parameter and the last value of the array is
+        equal to the second parameter then the function returns true, otherwise, the function returns false.*/
+
+        function int (arr = [x, y, z]) {
+           const a = 5;
+           const b = 9;
+           for (let i = 0; i < arr.length; i++) {
+            if (a == arr[0] && b == arr[2]) {
+               return true;
+            }
+           }
+              return false;
+
+        }
+           int ([5, 6, 9]);
+           int ([1, 6, 3]);
+    </script>
+    
+</body>
+</html>

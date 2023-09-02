@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        /* 1 - Create a function that receives an integer array and number as parameters (will be used
+           as index of array).
+           2 - Print the value of the array by the number value you got.
+           For example if the number is 2 you should print the value in the array of index 2.
+           3 - In case the number is not in the array index range you should print “Sorry, no value in the
+           array for index number: {number}”*/
+        
+        function arrN(arr = [], index) {
+            
+            if (index >= 0 && index < arr.length) {
+                console.log(`Sorry, no value in the array for index number: `);
+            }
+              console.log(`${arr[index]}`);
+        }  
+        arrN ([4, 2, 1, 9], 3);
+    </script>
+    
+</body>
+</html>
